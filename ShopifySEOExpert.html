@@ -1,6 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify SEO FAQ - Dark Theme</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* FAQ Container */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e; /* Slightly lighter dark container */
+            border-radius: 10px;
+            border: 1px solid #333; /* Subtle border */
+            padding: 20px 30px;
+        }
+
+        /* Header Styling */
+        .faq-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+        }
+
+        .faq-header h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .faq-header p {
+            font-size: 1.1em;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* FAQ Accordion Styling */
+        .faq-item {
+            border-bottom: 1px solid #333;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item summary {
+            font-size: 1.2em;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: color 0.2s;
+        }
+
+        .faq-item summary:hover {
+            color: #58a6ff; /* Accent color on hover */
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none; /* Hide default arrow */
+        }
+
+        .faq-item summary .faq-title {
+            padding-right: 15px;
+        }
+
+        .faq-item summary .faq-icon {
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+            color: #58a6ff;
+        }
+
+        .faq-item[open] > summary .faq-icon {
+            transform: rotate(90deg);
+        }
+
+        .faq-item .faq-answer {
+            padding: 0 5px 20px 5px;
+            color: #cccccc;
+            font-size: 1em;
+            line-height: 1.7;
+            border-top: 1px solid #333;
+            margin-top: -10px; /* Adjust spacing to feel connected */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .faq-container {
+                padding: 15px 20px;
+            }
+            .faq-header h1 {
+                font-size: 2em;
+            }
+            .faq-header p {
+                font-size: 1em;
+            }
+            .faq-item summary {
+                font-size: 1.1em;
+                padding: 15px 0;
+            }
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaocher A. | Shopify SEO Expert</title>
@@ -180,7 +295,80 @@
         </section>
 
     </main>
-    
+
+
+   
+
+
+    <section class="faq-container">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your guide to mastering Shopify SEO. Find quick answers to the most common questions below.</p>
+        </div>
+
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">What are the best SEO practices for Shopify stores?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Optimize your site structure, speed, and mobile performance; use keyword-driven content; build high-quality backlinks; regularly fix technical issues; implement schema markup; monitor and adapt using analytics.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">How do I optimize product pages for better rankings?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Use unique, keyword-rich titles and meta descriptions; add detailed product descriptions; compress images and use descriptive alt text; implement internal links to related products.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">Is Shopify good for SEO or are there limitations?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Shopify offers robust SEO features but comes with some limitations (like less customizable URL structure); however, with the right apps and techniques, it’s highly competitive.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">What are the most common Shopify SEO mistakes to avoid?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Ignoring site speed, using duplicate content, poor keyword targeting, missing meta tags, and neglecting mobile optimization are common issues.</p>
+            </div>
+        </details>
+        
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">How can I improve my site speed and mobile responsiveness for SEO?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Compress images, limit heavy apps, use Shopify's CDN, choose a responsive theme, and regularly test with tools like Google PageSpeed Insights.</p>
+            </div>
+        </details>
+        
+        <details class="faq-item">
+            <summary>
+                <span class="faq-title">How do I perform keyword research for my Shopify store?</span>
+                <span class="faq-icon">❯</span>
+            </summary>
+            <div class="faq-answer">
+                <p>Use tools like Google Keyword Planner or SEMrush; focus on long-tail, purchase-intent keywords relevant for each page and product.</p>
+            </div>
+        </details>
+
+    </section>
+
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white">
         <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
